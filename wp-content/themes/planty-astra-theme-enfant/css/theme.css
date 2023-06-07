@@ -6,3 +6,28 @@ body * {
     font-family: 'Syne', sans-serif;
 }
 
+/* HEADER */
+
+/*---.sticky-top {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+ }*/
+
+li.menu-item a:hover,
+li.menu-item.current-menu-item a {
+    font-weight: 700;
+    font-size: 15px;  
+    transition-duration: 0,3s;
+}
+
+
+/* FOOTER */
+/*#site-footer {
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff !important;
+ }*/
+
+
