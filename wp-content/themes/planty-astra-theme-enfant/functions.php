@@ -23,3 +23,21 @@ function child_enqueue_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
+
+
+/**
+ * Manually Select Logged in Menu in WordPress Using Code
+ */
+
+function my_wp_nav_menu_args( $args = '' ) {
+if( is_user_logged_in() ) {
+// Logged in menu to display
+$args['menu'] = 9;
+ 
+} else {
+// Non-logged-in menu to display
+$args['menu'] = 4;
+}
+return $args;
+}
+add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
