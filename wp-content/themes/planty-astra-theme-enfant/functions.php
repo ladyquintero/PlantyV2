@@ -41,3 +41,8 @@ $args['menu'] = 4;
 return $args;
 }
 add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+
+/**
+ * Eviter d'avoir des <p> partout dans CF7
+ */
+add_filter('wpcf7_autop_or_not', '__return_false');
