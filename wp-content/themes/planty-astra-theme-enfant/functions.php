@@ -14,7 +14,7 @@
 define( 'CHILD_THEME_PLANTY_ASTRA_THEME_ENFANT_VERSION', '1.0.0' );
 
 /**
- * Enqueue styles
+ * Enqueue styles - Theme.css 
  */
 function child_enqueue_styles() {
 
@@ -26,7 +26,7 @@ add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
 
 
 /**
- * Manually Select Logged in Menu in WordPress Using Code
+ * HOOK - Manually Select Logged in Menu in WordPress Using Code
  */
 
 function my_wp_nav_menu_args( $args = '' ) {
@@ -43,6 +43,6 @@ return $args;
 add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
 
 /**
- * Eviter d'avoir des <p> partout dans CF7
+ * CONTACT FORM 7 - Eviter d'avoir des <p> partout dans CF7
  */
 add_filter('wpcf7_autop_or_not', '__return_false');

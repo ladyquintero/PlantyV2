@@ -22,7 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 	<!-- FOOTER -->
-	<footer id="site-footer" class="header-footer-group">
+	
+	<footer id="site-footer">
   	<a href="http://localhost/PlantyV2/mentions-legales/">Méntions Legales</a>
         </footer><!-- #site-footer -->
 
